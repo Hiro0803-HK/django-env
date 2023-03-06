@@ -6,7 +6,7 @@
             "name": "Python: prj",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}",
+            "program": "${workspaceFolder}/manage.py",
             "args": [
                 "runserver",
                 "--noreload"
