@@ -39,4 +39,4 @@ services:
     tty: true
 
     volumes:
-      - ../web:/home/user1/dev
+      - ../web:/home/user1/django

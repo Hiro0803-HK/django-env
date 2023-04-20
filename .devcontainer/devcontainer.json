@@ -2,7 +2,7 @@
     "name": "Django Project",
     "dockerComposeFile": "compose.yml",
     "service": "web",
-    "workspaceFolder": "/home/user1/dev",
+    "workspaceFolder": "/home/user1/django",
     "customizations": {
         "vscode": {
 
