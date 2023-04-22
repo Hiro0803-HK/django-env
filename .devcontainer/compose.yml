@@ -2,7 +2,7 @@ services:
   db:
     image: postgres:15.0-alpine
 
-    container_name: 'prj-db'
+    container_name: 'book-db'
 
     expose:
       - "5432"
@@ -23,7 +23,7 @@ services:
 
     build: ./web
 
-    container_name: 'prj-web'
+    container_name: 'book-web'
 
     ports:
       - 8080:8080
@@ -39,4 +39,4 @@ services:
     tty: true
 
     volumes:
-      - ../web:/home/user1/django
+      - ../web:/home/user1/book
