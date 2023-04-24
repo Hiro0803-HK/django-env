@@ -12,6 +12,7 @@
                 "--noreload"
             ],
             "django": true
+             
         },
         {
             "name": "Python",
