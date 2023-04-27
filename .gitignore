@@ -1,2 +1,8 @@
 /db/database
 /web/log
+/nginx/ssl_certs/default_server
+/nginx/ssl_certs/dynamic-env
+/nginx/ssl_certs/localhost
+/nginx/ssl_certs/account.key
+/nginx/ssl_certs/dhparam.pem
+/nginx/ssl_certs/dynamic-env.stamp
