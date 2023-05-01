@@ -25,9 +25,6 @@ services:
 
     container_name: 'book-web'
 
-    #ports:
-    #  - "8080:8080"
-
     expose:
       - "8080"
 
@@ -54,12 +51,8 @@ services:
   nginx:
     image: nginx:latest
 
-    #ports:
-    #  - "8000:8000"
-
-    expose:
-      - "80"
-  #    - "8000"
+    ports:
+      - "80:80"
 
     volumes:
       - ../nginx/conf:/etc/nginx/conf.d
@@ -71,22 +64,22 @@ services:
   
 
 #https-portal追加
-  https-portal:
-    image: steveltn/https-portal:1
-    
-    ports:
-      - "80:80"
-      - "443:443"
+#  https-portal:
+#    image: steveltn/https-portal:1
+#    
+#    ports:
+#      - "80:80"
+#      - "443:443"
 
-    restart: always
+#    restart: always
 
-    depends_on:
-      - nginx
+#    depends_on:
+#      - nginx
 
-    environment:
-      DOMAINS: 'localhost -> http://nginx:80'
-      STAGE: 'local'
+#    environment:
+#      DOMAINS: 'localhost -> http://nginx:80'
+#      STAGE: 'local'
       #FORSE_RENEW: 'true'
     
-    volumes:
-      - ../nginx/ssl_certs:/var/lib/https-portal
+#    volumes:
+#      - ../nginx/ssl_certs:/var/lib/https-portal
