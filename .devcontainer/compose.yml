@@ -79,7 +79,7 @@ services:
 #    environment:
 #      DOMAINS: 'localhost -> http://nginx:80'
 #      STAGE: 'local'
-      #FORSE_RENEW: 'true'
+#FORSE_RENEW: 'true'
     
 #    volumes:
 #      - ../nginx/ssl_certs:/var/lib/https-portal
