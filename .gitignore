@@ -1,4 +1,4 @@
 /db/database
 /web/log
-/nginx/ssl_certs/
+#/nginx/ssl_certs/
 #/web/static/
