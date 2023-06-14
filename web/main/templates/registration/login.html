@@ -1,0 +1,29 @@
+{% extends 'pages/base.html' %}
+
+{% block title %}ログインフォーム{% endblock %}
+
+
+{% block content %}
+
+<span class="text-info bg-dark p-3 m-4 border border-info border-3 rounded-3 h1">
+ログインする
+</span>
+<p>
+<form method="post">
+  {% csrf_token %}
+  {% for error in form.errors.values %}
+  {{ error }}
+  {% endfor %}
+  <label class="m-4 alert alert-info" role="alert">
+    ユーザーID:
+  </label>
+  <input type="text" name="username">
+  <br>
+  <label class="m-4 alert alert-info" role="alert">
+    パスワード:
+  </label>
+  <input type="password" name="password">
+  <br>
+  <button type="submit">ログイン</button>
+</form>
+{% endblock content %}
