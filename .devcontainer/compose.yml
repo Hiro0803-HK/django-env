@@ -1,4 +1,6 @@
 services:
+
+  #PostgreSQL追加
   db:
     image: postgres:15.0-alpine
 
@@ -17,7 +19,7 @@ services:
       - ../db/database:/var/lib/postgresql/data
       - ../db/init:/docker-entrypoint-initdb.d
 
-    
+  #Django追加
   web:
     image: django/web:1.0
 
