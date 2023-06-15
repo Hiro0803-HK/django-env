@@ -13,11 +13,16 @@
     uwsgi
     
 ### ソースコードの説明
-    隠しディレクトリ.devcontainerにymlファイル、同階層のwebディレクトリにDockerfileを配置することで拡張機能Remote Developmentより、VSCode内でコンテナを起動している。
-    devcontainer.jsonファイルでコンテナ内のVSCodeで利用するディレクトリ、コンテナの名前、各種拡張機能を決定する。
-    requirements.txtはコンテナ環境作成時に利用するサービスを書いており、Dockerfileのコマンド実行と連動させている。
+    隠しディレクトリ.devcontainerにymlファイル、同階層のwebディレクトリにDockerfileを配置することで拡張機能Remote Developmentより、VSCode内でコンテナを起動しています。
+    devcontainer.jsonファイルでコンテナ内のVSCodeで利用するディレクトリ、コンテナの名前、各種拡張機能を決定しています。
+    requirements.txtはコンテナ環境作成時に利用するサービスを書いており、Dockerfileのコマンド実行と連動させています。
 
     dbディレクトリはローカルにマウントするディレクトリを配置している。
 
-    
+    nginxディレクトリにはnginxの各種設定ファイルを配置している。uwsgi_paramとssl_certsはHTTPS通信をする際に使用するコンテナhttps-portalに必要な設定とssl_keyのマウントディレクトリで、今の所は使用予定はありません。
+
+    webディレクトリはコンテナ内での作業内容をマウントするファイルをです。(今回はDjangoの作業内容)
+    隠しディレクトリ.vscodeはVSCodeでデバック実行するための設定ファイルが格納されています。
+
+    staticディレクトリはnginxにadminページを反映させるために用意しました。この中にadminページのデータが格納されています。
 
