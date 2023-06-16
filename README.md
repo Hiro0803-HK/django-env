@@ -4,7 +4,7 @@
     Visual Studio Code
     WSL2
     Remote Development 
-    Python3-11
+    Python3-11(Dockerfileより使用)
     Docker Desktop(docker)
     docker-compose
     nginx(コンテナ)
