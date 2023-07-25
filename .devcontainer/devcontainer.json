@@ -2,7 +2,7 @@
     "name": "Django Nginx Postgresql",
     "dockerComposeFile": "compose.yml",
     "service": "web",
-    "workspaceFolder": "/home/user1/book",
+    "workspaceFolder": "/home/user1/project",
     "customizations": {
         "vscode": {
 

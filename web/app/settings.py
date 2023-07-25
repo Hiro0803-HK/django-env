@@ -132,4 +132,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
-LOGIN_REDIRECT_URL = '/admin'
+LOGIN_REDIRECT_URL = '/pages/page1'

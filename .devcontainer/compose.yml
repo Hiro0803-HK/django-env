@@ -41,10 +41,10 @@ services:
     tty: true
 
     #uswgiのコマンド追加
-    command: uwsgi --socket :8080 --module app.wsgi --chdir /home/user1/book
+    command: uwsgi --socket :8080 --module app.wsgi --chdir /home/user1/project
 
     volumes:
-      - ../web:/home/user1/book
+      - ../web:/home/user1/project
       - ../web/static:/static
     
 
