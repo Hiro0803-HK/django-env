@@ -3,7 +3,7 @@
 ### 使用しているもの
     Visual Studio Code
     Windows Subsystem for Linux2 (WSL2)
-    Remote Development 
+    Remote Development
     Python3-11(Dockerfileより使用)
     Docker Desktop(docker)
     docker-compose
