@@ -33,7 +33,7 @@ ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'main.apps.MainConfig',
-    'accounts.apps.AccountsConfig',
+    'accounts.apps.AccountsConfig', #フォーム専用アプリケーション追加
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -133,6 +133,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
-LOGIN_REDIRECT_URL = '/page1'
+LOGIN_REDIRECT_URL = '/page1' #ログイン成功時の遷移ページ
 
-LOGOUT_REDIRECT_URL = '/page0'
+LOGOUT_REDIRECT_URL = '/page0' #ログアウト成功時の遷移ページ

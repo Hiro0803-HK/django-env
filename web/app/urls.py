@@ -19,6 +19,6 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     #path('accounts/', include('django.contrib.auth.url')),
-    path('accounts/', include('accounts.urls')),
-    path('', include('main.urls')), #ページ1
+    path('accounts/', include('accounts.urls')), #ログイン機能を実装
+    path('', include('main.urls')), #ページ
 ]
